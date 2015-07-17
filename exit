@@ -1,0 +1,23 @@
+[33mcommit 62c7215628453295d686290182232c65c2cd215d[m
+Author: Rommel <rommel.gutierrez03@gmail.com>
+Date:   Tue Mar 24 19:31:33 2015 +0800
+
+    added middleware. and models directory. eventually, we're moving all models in models directory
+
+[33mcommit a039b5bb47d78a44944763791bcf8e50640c5705[m
+Author: Rommel <rommel.gutierrez03@gmail.com>
+Date:   Mon Mar 23 09:51:48 2015 +0800
+
+    added new field to capture first successful login
+
+[33mcommit 1bd05402f5c686b5abf8fffa5ea997c47203e1b5[m
+Author: Rommel <rommel.gutierrez03@gmail.com>
+Date:   Mon Mar 23 08:52:38 2015 +0800
+
+    Editing nav links
+
+[33mcommit f4d0a5b2478b46800b103ae8c27da5d2e10e53df[m
+Author: Rommel <rommel.gutierrez03@gmail.com>
+Date:   Sun Mar 22 23:44:38 2015 +0800
+
+    Initial commit
