@@ -7,7 +7,7 @@
           <div class="header">							
             <h3>{{$title}}</h3>
           </div>
-          
+			          
         </div>
     </div>
   </div>
