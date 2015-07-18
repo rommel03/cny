@@ -29,10 +29,11 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo URL::to("js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css");?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo URL::to("js/jquery.select2/select2.css");?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo URL::to("js/bootstrap.slider/css/slider.css");?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo URL::to("js/intro.js/introjs.css");?>" />
+  <link rel="stylesheet" type="text/css" href="<?php echo URL::to("js/intro.js/introjs.css");?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo URL::to("js/jquery.datatables/bootstrap-adapter/css/datatables.css");?>" />
 	<!-- Custom styles for this template -->
 	<link href="<?php echo URL::to("css/style.css");?>" rel="stylesheet" />
-	
+	@yield('style')
 
 </head>
 <body  class="texture">
@@ -108,19 +109,18 @@
 </div>
 <script type="text/javascript" src="<?php echo URL::to("js/jquery.js");?>"></script>
 <script type="text/javascript" src="<?php echo URL::to("js/jquery.gritter/js/jquery.gritter.js");?>"></script>
-
 <script type="text/javascript" src="<?php echo URL::to("js/jquery.nanoscroller/jquery.nanoscroller.js");?>"></script>
 <script type="text/javascript" src="<?php echo URL::to("js/behaviour/general.js");?>"></script>
-<script src="<?php echo URL::to("js/jquery.ui/jquery-ui.js");?>" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo URL::to("js/jquery.nestable/jquery.nestable.js");?>"></script>
+<script type="text/javascript" src="<?php echo URL::to("js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js");?>"></script>
+<script type="text/javascript" src="<?php echo URL::to("js/jquery.ui/jquery-ui.js");?>"></script>
+<script type="text/javascript" src="<?php echo URL::to("js/bootstrap.switch/bootstrap-switch.min.js");?>"></script>
 <script type="text/javascript" src="<?php echo URL::to("js/jquery.sparkline/jquery.sparkline.min.js");?>"></script>
 <script type="text/javascript" src="<?php echo URL::to("js/jquery.easypiechart/jquery.easy-pie-chart.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/jquery.nestable/jquery.nestable.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/bootstrap.switch/bootstrap-switch.min.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js");?>"></script>
-<script src="<?php echo URL::to("js/jquery.select2/select2.min.js");?>" type="text/javascript"></script>
-<script src="<?php echo URL::to("js/skycons/skycons.js");?>" type="text/javascript"></script>
-<script src="<?php echo URL::to("js/bootstrap.slider/js/bootstrap-slider.js");?>" type="text/javascript"></script>
-<script src="<?php echo URL::to("js/intro.js/intro.js");?>" type="text/javascript"></script>
+<script type="text/javascript" src="<?php echo URL::to("js/jquery.select2/select2.min.js");?>"></script>
+<script type="text/javascript" src="<?php echo URL::to("js/skycons/skycons.js");?>" ></script>
+<script type="text/javascript" src="<?php echo URL::to("js/bootstrap.slider/js/bootstrap-slider.js");?>" ></script>
+<script type="text/javascript" src="<?php echo URL::to("js/intro.js/intro.js");?>" ></script>
 <!-- script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script -->
 
 
@@ -135,14 +135,12 @@
 	App.dashBoard();        
 	
 	  introJs().setOption('showBullets', false).start();
+    $('.dataTables_filter input').addClass('form-control').attr('placeholder','Search');
+    $('.dataTables_length select').addClass('form-control');
 
   });
 </script>
-<script src="<?php echo URL::to("js/behaviour/voice-commands.js");?>"></script>
 <script src="<?php echo URL::to("js/bootstrap/dist/js/bootstrap.min.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/jquery.flot/jquery.flot.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/jquery.flot/jquery.flot.pie.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/jquery.flot/jquery.flot.resize.js");?>"></script>
-<script type="text/javascript" src="<?php echo URL::to("js/jquery.flot/jquery.flot.labels.js");?>"></script>
+@yield('script')
 </body>
 </html>
